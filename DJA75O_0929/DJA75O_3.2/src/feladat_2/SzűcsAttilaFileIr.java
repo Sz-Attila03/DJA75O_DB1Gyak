@@ -6,7 +6,7 @@ import java.util.*;
 public class SzûcsAttilaFileIr {
 
 	public static void main(String[] args) {
-		ArrayList<String> kiir = new ArrayList<>();
+		List<Integer> kiir = new ArrayList<>();
 		
 		int ossze = 0;
 		int db = 0;
@@ -15,25 +15,47 @@ public class SzûcsAttilaFileIr {
 		System.out.println("Adja meg hány adatott szeretne beolvasni");
 		Scanner in = new Scanner(System.in);
 		db = in.nextInt();
-		in.close();
+		
+		////////////////////////////////////////////////////////////////////////
 		
 		for (int i = 0; i < db; i++) 
 		{
-			System.out.println("Adja meg az" + i + " számot: ");
+			System.out.println("Adja meg az " + i + " számot: ");
 			
-			Scanner be = new Scanner(System.in);
-			seged = be.nextInt();
-			be.close();
-			
+			seged = in.nextInt();
+
 			ossze += seged;
 			
 			kiir.add(seged);
-			kiir.add(ossze);
 		}
 		
-		FileWriter fw = new FileWriter("Szucs.txt");
-		fw.write(kiir);
-		fw.close();
+		kiir.add(ossze);
+		in.close();
+		
+		////////////////////////////////////////////////////////////////////////
+		
+		System.out.println("A beírt számok összege: " + ossze);
+		
+		FileWriter fw;
+		try 
+		{
+			fw = new FileWriter("Szucs.txt");
+			
+			for (Integer i : kiir) 
+			{
+				fw.write(i + System.lineSeparator());
+			}
+			
+			fw.close();
+			
+			System.out.println("Adatok a kiírva a fájlba!");
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		
+		////////////////////////////////////////////////////////////////////////
 	}
 
 }

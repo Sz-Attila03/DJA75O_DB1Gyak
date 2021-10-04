@@ -9,6 +9,13 @@ public class DJA75O_3_3 {
 		String[] szavak;
 		int id = 0;
 		
+		h1(id);
+
+	}
+
+	public static void h1(int id) {
+		String sor;
+		String[] szavak;
 		try
 		{
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -47,10 +54,10 @@ public class DJA75O_3_3 {
 			
 			System.out.println("Kész");
 		}
-		catch (Exception e) {
+		catch (Exception e) 
+		{
 			e.printStackTrace();
 		}
-
 	}
 
 }

@@ -1,0 +1,16 @@
+CREATE DATABASE DJA75O;
+USE DJA75O;
+
+CREATE TABLE GYARTO (
+	adoszam int NOT NULL PRIMARY KEY,
+	nev VARCHAR(30),
+	telephely
+);
+
+CREATE TABLE TERMEK (
+	tkod int NOT NULL PRIMARY KEY,
+	nev VARCHAR(50),
+	ear int NOT NULL,
+	gyarto int,
+	FOREIGN KEY (gyarto) REFERENCES GYARTO(adoszam)
+);

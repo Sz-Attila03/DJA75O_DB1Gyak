@@ -4,7 +4,7 @@ USE DJA75O;
 CREATE TABLE GYARTO (
 	adoszam int NOT NULL PRIMARY KEY,
 	nev VARCHAR(30),
-	telephely
+	telephely VARCHAR(30)
 );
 
 CREATE TABLE TERMEK (

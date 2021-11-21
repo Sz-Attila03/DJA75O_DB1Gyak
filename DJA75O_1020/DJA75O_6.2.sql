@@ -23,7 +23,7 @@ CREATE TABLE egysegek (
 	db int NOT NULL
 );
 
-CREATE TABLE alkatreszek (
+CREATE TABLE alkatresz (
 	akod int NOT NULL PRIMARY KEY,
 	nev VARCHAR(50)
 );
@@ -31,6 +31,6 @@ CREATE TABLE alkatreszek (
 CREATE TABLE komponens (
 	termek int,
 	FOREIGN KEY (termek) REFERENCES termek(tkod),
-	alkatreszek int,
-	FOREIGN KEY (alkatreszek) REFERENCES alkatreszek(akod)
+	alkatresz int,
+	FOREIGN KEY (alkatresz) REFERENCES alkatresz(akod)
 );

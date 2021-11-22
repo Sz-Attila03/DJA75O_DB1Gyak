@@ -13,7 +13,7 @@ CREATE TABLE resztvevo (
 	lakcim VARCHAR(70)
 );
 
-CREATE TABLE tr_kapcsolo (
+CREATE TABLE befizetes (
 	tanfolyam_id int NOT NULL,
 	FOREIGN KEY (tanfolyam_id) REFERENCES tanfolyam(tkod),
 	resztvevo_id int NOT NULL,

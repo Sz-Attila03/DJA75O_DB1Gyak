@@ -1,0 +1,64 @@
+CREATE DATABASE formula_one;
+USE formula_one;
+
+CREATE TABLE versenyzok(
+	rajtszam INTEGER NOT NULL PRIMARY KEY,
+	nev VARCHAR(40),
+	orszag VARCHAR(40)
+);
+
+CREATE TABLE csapatok(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	nev VARCHAR(40),
+	konstruktor VARCHAR(40),
+	auto_kod VARCHAR(6),
+	orszag VARCHAR(40),
+	motor_ID INTEGER(2),
+	FOREIGN KEY (motor_ID) REFERENCES motor_gyartok(ID),
+	versnyzo_egy_ID INTEGER(2),
+	FOREIGN KEY (versnyzo_egy_ID) REFERENCES versenyzok(rajtszam),
+	versnyzo_ketto_ID INTEGER(2),
+	FOREIGN KEY (versnyzo_ketto_ID) REFERENCES versenyzok(rajtszam)
+);
+
+CREATE TABLE palyak(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	nev VARCHAR(40),
+	orszag VARCHAR(40),
+	kor INTEGER(2),
+	kanyarok INTEGER(2),
+	gyoztes_ID INTEGER(2),
+	FOREIGN KEY (gyoztes_ID) REFERENCES versenyzok(rajtszam),
+	gumi_keverekek_egy VARCHAR(2),
+	gumi_keverekek_ketto VARCHAR(2),
+	gumi_keverekek_harom VARCHAR(2)
+);
+
+CREATE TABLE motor_gyartok(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	gyarto VARCHAR(40),
+	orszag VARCHAR(40)
+);
+
+CREATE TABLE világbajnokok(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	rajtszam INTEGER(2),
+	nev VARCHAR(40),
+	ev INTEGER(4),
+	csapat VARCHAR(40),
+	aktualis_csapat INTEGER(2),
+	FOREIGN KEY (aktualis_csapat) REFERENCES csapatok(ID)
+);
+
+CREATE TABLE gumi_keverekek(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	gyarto VARCHAR(40),
+	keverek VARCHAR(2)
+);
+
+CREATE TABLE k_versenyzok_csapatok(
+	versenyzok_ID INTEGER,
+	FOREIGN KEY (versenyzok_ID) REFERENCES versenyzok(rajtszam),
+	csapat_ID INTEGER,
+	FOREIGN KEY (csapat_ID) REFERENCES csapatok(ID)
+);

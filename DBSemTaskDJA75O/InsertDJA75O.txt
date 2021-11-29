@@ -1,0 +1,121 @@
+//versenyzők
+INSERT INTO versenyzok VALUES(16, "Charles Leclerc", "Monacó");
+INSERT INTO versenyzok VALUES(55, "Carlos Sainz Jr.", "Spanyol");
+INSERT INTO versenyzok VALUES(7, "Kimi Räikkönen", "Finn");
+INSERT INTO versenyzok VALUES(99, "Antonio Giovinazzi", "Olasz");
+INSERT INTO versenyzok VALUES(47, "Mick Schumacher", "Német");
+INSERT INTO versenyzok VALUES(9, "Nyikita Mazepin", "Orosz");
+INSERT INTO versenyzok VALUES(11, "Sergio Pérez", "Mexikói");
+INSERT INTO versenyzok VALUES(33, "Max Verstappen", "Holland");
+INSERT INTO versenyzok VALUES(10, "Pierre Gasly", "Francia");
+INSERT INTO versenyzok VALUES(22, "Cunoda Júki", "Japán");
+INSERT INTO versenyzok VALUES(14, "Fernando Alonso", "Spanyol");
+INSERT INTO versenyzok VALUES(31, "Esteban Ocon", "Francia");
+INSERT INTO versenyzok VALUES(6, "Nicholas Latifi", "Kanadai");
+INSERT INTO versenyzok VALUES(63, "George Russell", "Brit");
+INSERT INTO versenyzok VALUES(5, "Sebastian Vettel", "Német");
+INSERT INTO versenyzok VALUES(18, "Lance Stroll", "Kanadai");
+INSERT INTO versenyzok VALUES(3, "Daniel Ricciardo", "Ausztrál");
+INSERT INTO versenyzok VALUES(4, "Lando Norris", "Brit");
+INSERT INTO versenyzok VALUES(44, "Lewis Hamilton", "Brit");
+INSERT INTO versenyzok VALUES(77, "Valtteri Bottas", "Finn");
+
+////////////////////////////////////////////////////////////////////////////
+
+//csapatok
+INSERT INTO csapatok VALUES(0, "Visszavonult", "NULL", "NULL", "NULL", NULL, NULL, NULL);
+INSERT INTO csapatok VALUES(1, "Scuderia Ferrari Mission Winnow", "Ferrari", "SF21", "Olasz", 1, 16, 55);
+INSERT INTO csapatok VALUES(2, "Alfa Romeo Racing ORLEN", "Alfa Romeo-Ferrari", "C41", "Svájci", 1, 7, 99);
+INSERT INTO csapatok VALUES(3, "Uralkali Haas F1 Team", "Haas-Ferrari", "VF-21", "USA", 1, 47, 9);
+INSERT INTO csapatok VALUES(4, "Red Bull Racing", "Red Bull-Honda", "RB16B", "Osztrák", 2, 11, 33);
+INSERT INTO csapatok VALUES(5, "Scuderia AlphaTauri Honda", "AlphaTauri-Honda", "AT02", "Olasz", 2, 10, 22);
+INSERT INTO csapatok VALUES(6, "Alpine F1 Team", "Alpine-Renault", "A521", "Francia", 3, 14, 31);
+INSERT INTO csapatok VALUES(7, "Williams Racing", "Williams-Mercedes", "FW43B", "Brit", 4, 6, 63);
+INSERT INTO csapatok VALUES(8, "Aston Martin Cognizant F1 Team", "Aston Martin-Mercedes", "AMR21", "Brit", 4, 5, 18);
+INSERT INTO csapatok VALUES(9, "McLaren F1 Team", "McLaren-Mercedes", "MCL35M", "Brit", 4, 3, 4);
+INSERT INTO csapatok VALUES(10, "Mercedes-AMG Petronas Motorsport", "Mercedes", "W12", "Német", 4, 44, 77);
+
+////////////////////////////////////////////////////////////////////////////
+
+//palyak
+INSERT INTO palyak VALUES(1, "Formula 1 Gulf Air Bahrain Grand Prix 2021", "Bahrein", 57, 15, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(2, "Formula 1 Pirelli Gran Premio Del Made In Italy E Dell'emilia Romagna 2021", "Olaszország", 63, 17, 33, "C1", "C2", "C3");
+INSERT INTO palyak VALUES(3, "Formula 1 Heineken Grande Prémio De Portugal 2021", "Portugália", 66, 15, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(4, "Formula 1 Gran Premio De España 2021", "Spanyolország", 66, 16, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(5, "Formula 1 Grand Prix De Monaco 2021", "Monacó", 78, 19, 33, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(6, "Formula 1 Azerbaijan Grand Prix 2021", "Azerbajdzsán", 51, 20, 11, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(7, "Formula 1 Emirates Grand Prix De France 2021", "Franciaország", 53, 18, 33, "C1", "C2", "C3");
+INSERT INTO palyak VALUES(8, "Formula 1 BWT Grosser Preis Der Steiermark 2021", "Ausztria", 71, 10, 33, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(9, "Formula 1 BWT Grosser Preis Von Österreich 2021", "Ausztria", 71, 10, 33, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(10, "Formula 1 Pirelli British Grand Prix 2021", "Egyesült Királyság", 52, 18, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(11, "Formula 1 Rolex Magyar Nagydíj 2021", "Magyarország", 70, 14, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(12, "Formula 1 Rolex Belgian Grand Prix 2021", "Belgium", 44, 21, 33, "C1", "C2", "C3");
+INSERT INTO palyak VALUES(13, "Formula 1 Heineken Dutch Grand Prix 2021", "Hollandia", 72, 14, 33, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(14, "Formula 1 Heineken Gran Premio D’italia 2021", "Olaszország", 53, 10, 3, "C1", "C2", "c3");
+INSERT INTO palyak VALUES(15, "Formula 1 VTB Russian Grand Prix 2021", "Oroszország", 53, 19, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(16, "Formula 1 Rolex Turkish Grand Prix 2021", "Törökország", 58, 14, 77, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(17, "Formula 1 Aramco United States Grand Prix 2021", "USA", 56, 20, 44, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(18, "Formula 1 Gran Premio De La Ciudad De México 2021", "Mexikó", 71, 17, 33, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(19, "Formula 1 Heineken Grande Prêmio De São Paulo 2021", "Brazília", 71, 15, 33, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(20, "Formula 1 Ooredoo Qatar Grand Prix 2021", "Katar", 57, 16, 16, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(21, "Formula 1 Saudi Arabian Grand Prix 2021", "Szaúd-Arábia", 50, 27, 22, "C2", "C3", "C4");
+INSERT INTO palyak VALUES(22, "Formula 1 Etihad Airways Abu Dhabi Grand Prix 2021", "Egyesült Arab Emírségek", 55, 20, 44, "C2", "C3", "C4");
+
+////////////////////////////////////////////////////////////////////////////
+
+//motor_gyartok
+INSERT INTO motor_gyartok VALUES(1, "Ferrari", "Olasz");
+INSERT INTO motor_gyartok VALUES(2, "Honda", "Japán");
+INSERT INTO motor_gyartok VALUES(3, "Renault", "Francia");
+INSERT INTO motor_gyartok VALUES(4, "Mercedes", "Német");
+
+////////////////////////////////////////////////////////////////////////////
+
+//világbajnokok
+INSERT INTO világbajnokok VALUES(1, 3, "Michael Schumacher", 2000, "Ferrari", 0);
+INSERT INTO világbajnokok VALUES(2, 1, "Michael Schumacher", 2001, "Ferrari", 0);
+INSERT INTO világbajnokok VALUES(3, 1, "Michael Schumacher", 2002, "Ferrari", 0);
+INSERT INTO világbajnokok VALUES(4, 1, "Michael Schumacher", 2003, "Ferrari", 0);
+INSERT INTO világbajnokok VALUES(5, 1, "Michael Schumacher", 2004, "Ferrari", 0);
+INSERT INTO világbajnokok VALUES(6, 5, "Fernando Alonso", 2005, "Renault", 6);
+INSERT INTO világbajnokok VALUES(7, 1, "Fernando Alonso", 2006, "Renault", 6);
+INSERT INTO világbajnokok VALUES(8, 6, "Kimi Räikkönen", 2007, "Ferrari", 2);
+INSERT INTO világbajnokok VALUES(9, 22, "Lewis Hamilton", 2008, "McLaren-Mercedes", 10);
+INSERT INTO világbajnokok VALUES(10, 23, "Jenson Button", 2009, "Brawn-Mercedes", 0);
+INSERT INTO világbajnokok VALUES(11, 5, "Sebastian Vettel", 2010, "Red Bull-Renault", 8);
+INSERT INTO világbajnokok VALUES(12, 1, "Sebastian Vettel", 2011, "Red Bull-Renault", 8);
+INSERT INTO világbajnokok VALUES(13, 1, "Sebastian Vettel", 2012, "Red Bull-Renault", 8);
+INSERT INTO világbajnokok VALUES(14, 1, "Sebastian Vettel", 2013, "Red Bull-Renault", 8);
+INSERT INTO világbajnokok VALUES(15, 44, "Lewis Hamilton", 2014, "Mercedes", 10);
+INSERT INTO világbajnokok VALUES(16, 44, "Lewis Hamilton", 2015, "Mercedes", 10);
+INSERT INTO világbajnokok VALUES(17, 6, "Nico Rosberg", 2016, "Mercedes", 0);
+INSERT INTO világbajnokok VALUES(18, 44, "Lewis Hamilton", 2017, "Mercedes", 10);
+INSERT INTO világbajnokok VALUES(19, 44, "Lewis Hamilton", 2018, "Mercedes", 10);
+INSERT INTO világbajnokok VALUES(20, 44, "Lewis Hamilton", 2019, "Mercedes", 10);
+INSERT INTO világbajnokok VALUES(21, 44, "Lewis Hamilton", 2020, "Mercedes", 10);
+
+////////////////////////////////////////////////////////////////////////////
+
+//k_versenyzok_csapatok
+INSERT INTO k_versenyzok_csapatok VALUES(16, 1);
+INSERT INTO k_versenyzok_csapatok VALUES(55, 1);
+INSERT INTO k_versenyzok_csapatok VALUES(7, 2);
+INSERT INTO k_versenyzok_csapatok VALUES(99, 2);
+INSERT INTO k_versenyzok_csapatok VALUES(47, 3);
+INSERT INTO k_versenyzok_csapatok VALUES(9, 3);
+INSERT INTO k_versenyzok_csapatok VALUES(11, 4);
+INSERT INTO k_versenyzok_csapatok VALUES(33, 4);
+INSERT INTO k_versenyzok_csapatok VALUES(10, 5);
+INSERT INTO k_versenyzok_csapatok VALUES(22, 5);
+INSERT INTO k_versenyzok_csapatok VALUES(14, 6);
+INSERT INTO k_versenyzok_csapatok VALUES(31, 6);
+INSERT INTO k_versenyzok_csapatok VALUES(6, 7);
+INSERT INTO k_versenyzok_csapatok VALUES(63, 7);
+INSERT INTO k_versenyzok_csapatok VALUES(5, 8);
+INSERT INTO k_versenyzok_csapatok VALUES(18, 8);
+INSERT INTO k_versenyzok_csapatok VALUES(3, 9);
+INSERT INTO k_versenyzok_csapatok VALUES(4, 9);
+INSERT INTO k_versenyzok_csapatok VALUES(44, 10);
+INSERT INTO k_versenyzok_csapatok VALUES(77, 10);
+
+////////////////////////////////////////////////////////////////////////////
